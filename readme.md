@@ -24,5 +24,8 @@
 
 
 **How to compile with g++ compiler and run**
-``` g++ -o EDU_MS info.cpp Main.cpp Student.cpp Doctor.cpp ```
-``` ./EDU_MS ```
+```
+g++ -o EDU_MS info.cpp Main.cpp Student.cpp Doctor.cpp
+./EDU_MS
+
+```
