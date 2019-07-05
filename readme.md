@@ -1,6 +1,5 @@
 # Educational Management System
 
-**Students and Doctors stored in linked list data structure and this data written on files Student.dat and Doctor.dat**
 
 ## Doctor
   * can display his information like name, username , email and id
@@ -17,6 +16,8 @@
  * can display his courses
  * remove course
  * every student have it's own courses, id, name, username, password and email, stored in node
+
+**Students and Doctors stored in linked list data structure and this data written on files Student.dat and Doctor.dat**
 
 
 ## Course
