@@ -6,6 +6,7 @@
 #include<regex>
 #include<vector>
 #include<fstream>
+#include "clear.h"
 namespace informations
 {
 

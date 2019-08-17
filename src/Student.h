@@ -5,6 +5,7 @@
 #include<iostream>
 #include<stdlib.h>
 #include<iomanip>
+#include "clear.h"
 
 
 class Student: private informations::person

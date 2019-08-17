@@ -10,7 +10,7 @@ readData(DoctorList,isStudent);
 void Doctor::mainMenu()
 
 {
-	system("clear");
+	system(CLEAR);
 	short choice;
 	input:
 	std::cout << "**********************Welcome**********************\n";
@@ -20,14 +20,14 @@ void Doctor::mainMenu()
 
 	if (std::cin.fail())
 	{
-		system("clear");
+		system(CLEAR);
 		std::cout << "Wrong Input Data Please Try again!\n";
 		std::cin.clear();
 		std::cin.ignore(32767, '\n');
 		goto input;
 	}
 
-	system("clear");
+	system(CLEAR);
 
 	switch (choice)
 	{
@@ -65,14 +65,14 @@ void Doctor::docMenu(informations::Data* doctor)
 
 	if (std::cin.fail())
 	{
-		system("clear");
+		system(CLEAR);
 		std::cout << "Wrong Input Data Please Try again!\n";
 		std::cin.clear();
 		std::cin.ignore(32767, '\n');
 		goto input;
 	}
 
-	system("clear");
+	system(CLEAR);
 	switch (choice)
 	{
 	case 1:
@@ -127,7 +127,7 @@ void Doctor::accessCourse(informations::Data* doc)
         	if(doc->DMyCourses[x]->code == code) //If the Course is found and it belong to that Doctor
         	{
         	   openCourse(AllCourses[index]);
-        	   system("clear");
+        	   system(CLEAR);
         	   return;
         	}
         }
@@ -162,7 +162,7 @@ void Doctor::openCourse(informations::Course* OwnedCourse)
    {
 	   std::cin.clear();
 	   std::cin.ignore(32767,'\n');
-	   system("clear");
+	   system(CLEAR);
 	   std::cout<<"==> Wrong Input! , Please Try again!\n";
 	   goto input;
    }
@@ -177,7 +177,7 @@ void Doctor::openCourse(informations::Course* OwnedCourse)
 	   return;
 
    default:
-	   system("clear");
+	   system(CLEAR);
 	   std::cout<<"==> Wrong Input! , Please Try again ..\n";
        goto input;
    }
@@ -202,7 +202,7 @@ void Doctor::createCourse(informations::Data* doc)
 
 void Doctor::removeCourse(informations::Data* doctor)
 {
-  system("clear");
+  system(CLEAR);
   std::string code;
   int index;
   std::cout<<"Please Enter Course Code: ";

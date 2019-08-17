@@ -4,6 +4,7 @@
 #include<iostream>
 #include<vector>
 #include<string>
+#include "clear.h"
 class Doctor : public informations::person
 {
 private:

@@ -10,7 +10,7 @@ readData(StudentList,isStudent);
 
 void Student::mainMenu()
 {
-	system("clear");
+	system(CLEAR);
 	short choice;
 	input:
 	std::cout << "**********************Welcome**********************\n";
@@ -20,14 +20,14 @@ void Student::mainMenu()
 
 	if (std::cin.fail())
 	{
-		system("clear");
+		system(CLEAR);
 		std::cout << "Wrong Input Data Please Try again!\n";
 		std::cin.clear();
 		std::cin.ignore(32767, '\n');
 		goto input;
 	}
 
-	system("clear");
+	system(CLEAR);
 
 	switch (choice)
 	{
@@ -65,14 +65,14 @@ void Student::studentMenu(informations::Data* student)
 	std::cin.ignore();
 	if (std::cin.fail())
 	{
-		system("clear");
+		system(CLEAR);
 		std::cout << "Wrong Input Data Please Try again!\n";
 		std::cin.clear();
 		std::cin.ignore(32767, '\n');
 		goto input;
 	}
 
-	system("clear");
+	system(CLEAR);
 	switch (choice)
 	{
 	case 1:
@@ -112,7 +112,7 @@ void Student::studentMenu(informations::Data* student)
 
 void Student::removeCourse(informations::Data* &student)
 {
-    system("clear");
+    system(CLEAR);
     std::string code;
 	std::cout<< "Enter Course Code: ";
 	std::getline(std::cin,code);

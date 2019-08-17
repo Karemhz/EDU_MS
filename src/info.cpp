@@ -32,11 +32,11 @@ short choice;
 		switch (choice)
 		{
 		case 1:
-			system("clear");
+			system(CLEAR);
 			edit(plist,A,isStudent);
 			break;
 		case 2:
-			system("clear");
+			system(CLEAR);
 			return;
 
 		default:
@@ -199,7 +199,7 @@ Data* person::logIn(Data* plist)
 	std::getline(std::cin, P.name);
 	std::cout << "Please Enter your Password: ";
 	std::getline(std::cin, P.password);
-	system("clear");
+	system(CLEAR);
 	Data* A = verfiy(plist,P.name,P.password);
 
 	return A;
@@ -211,7 +211,7 @@ Data* person::verfiy(Data* &plist,std::string username, std::string password)
 	Data* here = plist;
 	if (here == NULL)
 	{
-		system("clear");
+		system(CLEAR);
 		std::cout << "!!!!!!!!!!*Please SignUp First*!!!!!!!!!! \n";
 
 		return NULL;
@@ -229,13 +229,13 @@ Data* person::verfiy(Data* &plist,std::string username, std::string password)
 	else if (here != NULL && here->username == username
 			&& here->password != password)
 	{
-		system("clear");
+		system(CLEAR);
 		std::cout << "Wrong Password\n";
         return NULL;
    }
 	else
 	{
-		system("clear");
+		system(CLEAR);
 		std::cout << "!!!!!!!!!!*Not Found*!!!!!!!!!!\n";
 		return NULL;
 	}
@@ -277,7 +277,7 @@ void person::signUp(Data* &plist)
 		goto email;
 	}
 
-	system("clear");
+	system(CLEAR);
 	person::addPerson(plist,P.username, P.name, P.password, P.email);
 }
 

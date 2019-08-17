@@ -23,7 +23,7 @@ input: cout << "--------------------------------------------------------\n";
 	   cout << "(3) Exit\n";
 	   cin >> setw(1) >> choice;
 	   cin.ignore();
-	   system("clear");
+	   system(CLEAR);
 	if (cin.fail())
 	{
 		cout << "# Wrong Input Data Please Try again #!\n\n";
